@@ -60,6 +60,9 @@ a{
 .text, a{
     font-size: 18px;
 }
+.text{
+    color: #E5E7EB;
+}
 button{
     background-color: #3882F6;
     color: white;
@@ -72,6 +75,37 @@ button{
 img{
     width: 300px;
     height: 200px;;
+}
+.info{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.info-header{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+}
+.square{
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+.item{
+    width: 105px;
+}
+.item > p{
+    color: #1F2937;
+    text-align: center;
 }
 .quote{
     background-color: #E5E7EB;
