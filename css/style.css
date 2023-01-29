@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 .header-wrap, .footer{
-    background-color: #1F2937;
+    background-color: #372b1f;
 }
 .header-wrap{
     display: flex;
@@ -46,10 +46,10 @@ a{
     color: white;
 }
 .about{
-    width: 400px;
+    width: 500px;
 }
 .about > button{
-    margin-top: 8px;
+    margin-top: 16px;
 }
 .title{
     font-weight: 800;
@@ -63,9 +63,9 @@ a{
     color: #E5E7EB;
 }
 button{
-    background-color: #3882F6;
+    background-color: #f69637;
     color: white;
-    border: 2px solid #3882F6;
+    border: 2px solid #f69637;
     border-radius: 5px;
     padding: 4px 8px;
     font-weight: bold;
@@ -94,7 +94,7 @@ img{
     text-align: center;
 }
 .square{
-    border: 5px solid #3882F6;
+    border: 5px solid #f69637;
     border-radius: 10px;
     height: 100px;
     width: 100px;
@@ -137,7 +137,7 @@ img{
     align-items: center;
 }
 .box{
-    background-color: #3882F6;
+    background-color: #f69637;
     border-radius: 5px;
     padding: 32px;
     display: flex;
