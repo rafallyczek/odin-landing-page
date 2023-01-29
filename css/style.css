@@ -1,5 +1,4 @@
 body{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
@@ -66,7 +65,7 @@ a{
 button{
     background-color: #3882F6;
     color: white;
-    border: none;
+    border: 2px solid #3882F6;
     border-radius: 5px;
     padding: 4px 8px;
     font-weight: bold;
@@ -86,7 +85,7 @@ img{
 .items{
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 64px;
 }
 .info-header{
     font-size: 36px;
@@ -115,7 +114,7 @@ img{
     align-items: center;
 }
 .quote{
-    width: 1000px;
+    width: 800px;
     display: flex;
     flex-direction: column;
 }
@@ -130,4 +129,28 @@ img{
     font-weight: bold;
     color: black;
     align-self: flex-end;
+}
+.signup{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+.box-header{
+    font-weight: 800;
+}
+.box-text{
+    width: 600px;
+}
+.box > button{
+    border: 2px solid white;
 }
