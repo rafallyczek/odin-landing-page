@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 1000px;
+    overflow-x: hidden;
 }
 .top{
     display: flex;
@@ -81,6 +82,7 @@ img{
     flex-direction: column;
     justify-content: center;
     gap: 32px;
+    overflow-x: hidden;
 }
 .items{
     display: flex;
@@ -155,9 +157,6 @@ img{
 }
 .box-header{
     font-weight: 800;
-}
-.box-text{
-    width: 600px;
 }
 .box > button{
     border: 2px solid white;
