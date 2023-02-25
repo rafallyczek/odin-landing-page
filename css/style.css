@@ -1,10 +1,14 @@
 body{
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
     color: white;
     margin: 0;
+}
+html{
+    height: -webkit-fill-available;
 }
 .header-wrap, .footer{
     background-color: #372b1f;
@@ -12,12 +16,18 @@ body{
 .header-wrap{
     display: flex;
     justify-content: center;
+    flex: 5;
 }
 .header{
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 50%;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 1500px){
+    .header{
+        width: 70%;
+    }
 }
 .top{
     display: flex;
@@ -78,12 +88,12 @@ img{
     height: 200px;;
 }
 .info{
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 32px;
     overflow-x: hidden;
+    flex: 4 0 400px;
 }
 .items{
     display: flex;
@@ -119,10 +129,10 @@ img{
 }
 .quote-wrap{
     background-color: #E5E7EB;
-    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 4 0 350px;
 }
 .quote{
     width: 800px;
@@ -142,10 +152,10 @@ img{
     align-self: flex-end;
 }
 .signup{
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 3 0 300px;
 }
 .box{
     background-color: #f69637;
@@ -154,7 +164,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 50%;
 }
 .box-header{
     font-weight: 800;
@@ -166,7 +176,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    flex: 1 0 70px;
 }
 .footer-content{
     text-align: center;
