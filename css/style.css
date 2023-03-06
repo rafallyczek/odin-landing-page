@@ -21,13 +21,8 @@ html{
 .header{
     display: flex;
     flex-direction: column;
-    width: 50%;
     overflow-x: hidden;
-}
-@media only screen and (max-width: 1500px){
-    .header{
-        width: 70%;
-    }
+    padding-bottom: 1em;
 }
 .top{
     display: flex;
@@ -39,10 +34,13 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    min-height: 400px;
+}
+.top, .bottom{
+    padding: 0 1em;
 }
 .logo{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #F9FAF8;
     font-weight: 800;
 }
@@ -52,6 +50,7 @@ ul{
     padding: 0;
     display: flex;
     gap: 16px;
+    padding-left: 1em;
 }
 a{
     text-decoration: none;
@@ -66,10 +65,10 @@ a{
 .title{
     font-weight: 800;
     color: #F9FAF8;
-    font-size: 48px;
+    font-size: 3rem;
 }
 .text, li > a{
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 .text{
     color: #E5E7EB;
@@ -91,14 +90,15 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
-    overflow-x: hidden;
-    flex: 4 0 400px;
+    gap: 2em;
+    min-height: 50vh;
+    flex: 4 0;
+    padding: clamp(1em, 5vw, 2em) 0;
 }
 .items{
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: clamp(2em, 5vw, 4em);
 }
 .info-header{
     font-size: 36px;
@@ -135,9 +135,10 @@ img{
     flex: 4 0 350px;
 }
 .quote{
-    width: 800px;
+    width: min(800px, 50vw);
     display: flex;
     flex-direction: column;
+    gap: clamp(1em, 5vw, 1.5em);
 }
 .quote-text{
     color: #1F2937;
@@ -177,10 +178,29 @@ img{
     justify-content: center;
     align-items: center;
     flex: 1 0 70px;
+    padding: .5em 0;
 }
 .footer-content{
     text-align: center;
 }
 .footer-content a{
     color: #f69637;
+}
+
+@media only screen and (max-width: 1000px){
+    .bottom{
+       flex-direction: column; 
+       align-items: center;
+       justify-content: center;
+       gap: 1em;
+    }
+    .about{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .items{
+        flex-wrap: wrap;
+    }
 }
