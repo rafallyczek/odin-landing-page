@@ -91,7 +91,7 @@ img{
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    min-height: 50vh;
+    height: 50vh;
     flex: 4 0;
     padding: clamp(1em, 5vw, 2em) 0;
 }
