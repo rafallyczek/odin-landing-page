@@ -27,16 +27,11 @@
 
 body{
     min-height: 100vh;
-    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
     color: var(--clr-light);
     margin: 0;
-}
-
-html{
-    height: -webkit-fill-available;
 }
 
 h1, h2{
@@ -88,7 +83,7 @@ li > a{
 }
 
 .about{
-    width: 500px;
+    max-width: 500px;
 }
 
 .about > button{
