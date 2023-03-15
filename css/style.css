@@ -38,6 +38,10 @@ h1, h2{
     margin: 0;
 }
 
+p{
+    margin: 0.2em 0;
+}
+
 /* ------------------
        TYPOGRAPHY 
    ------------------ */
@@ -167,14 +171,6 @@ img{
     padding: 2rem;
 }
 
-footer{
-    padding: .5em 0;
-}
-
-p{
-    margin: 0.2em 0;
-}
-
 /* ------------------
        COMPONENTS 
    ------------------ */
@@ -203,6 +199,10 @@ button:hover{
 
 .box > button{
     border: 2px solid var(--clr-light);
+}
+
+footer{
+    padding: .5em 0;
 }
 
 /* ------------------
