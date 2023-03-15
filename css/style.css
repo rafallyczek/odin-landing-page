@@ -71,14 +71,17 @@ li > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em;
+    padding: 1rem;
 }
 
 .header{
-    height: 50px;
+    min-height: 50px;
 }
 
 .hero{
+    flex-direction: column; 
+    justify-content: center;
+    gap: 1em;
     min-height: 400px;
 }
 
@@ -100,12 +103,13 @@ img{
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    padding: clamp(1em, 5vw, 2em) 0;
+    padding: 1.5rem;
 }
 
 .items{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: clamp(2em, 5vw, 4em);
 }
 
@@ -132,14 +136,14 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: clamp(1em, 5vw, 2em) 0;
+    padding: 2rem;
 }
 
 .quote{
     display: flex;
     flex-direction: column;
     gap: clamp(1em, 5vw, 1.5em);
-    width: min(800px, 50vw);
+    width: min(600px, 100% - 2rem);
 }
 
 .author{
@@ -150,16 +154,17 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: clamp(1em, 5vw, 2em) 0;
+    padding: 2rem;
 }
 
 .box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
-    width: 50%;
+    gap: clamp(1em, 5vw, 1.5em);
+    width: min(600px, 100% - 2rem);
     border-radius: 5px;
+    padding: 2rem;
 }
 
 footer{
@@ -264,20 +269,11 @@ button:hover{
       MEDIA QUERIES 
    ------------------ */
 
-@media only screen and (max-width: 1000px){
+@media (min-width: 50em){
     .hero{
-       flex-direction: column; 
-       align-items: center;
-       justify-content: center;
-       gap: 1em;
+        flex-direction: row;
     }
     .about{
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 700px){
-    .items{
-        flex-wrap: wrap;
+        text-align: left;
     }
 }
