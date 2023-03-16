@@ -100,7 +100,6 @@ li > a{
     cursor: pointer;
     z-index: 3;
     background-image: url("../img/hamburger.svg");
-    background-size: 100%;
     background-color: transparent;
 }
 
