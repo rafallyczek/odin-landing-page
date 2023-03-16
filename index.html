@@ -5,15 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Odin Landing Page</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./javascript/script.js" defer></script>
     </head>
+
     <body>
 
         <header class="primary-header bg-clr-primary">
             <div class="container">
                 <div class="header">
                     <a href="#" class="text-clr-light fs-medium fw-bold">Fox website</a>
-                    <nav class="primary-navigation">
-                        <ul class="text-clr-light">
+                    <button class="nav-switch" aria-controls="primary-navigation" aria-expanded="false" aria-label="menu"></button>
+                    <nav>
+                        <ul class="primary-navigation text-clr-light" id="primary-navigation" data-hidden="true">
                             <li><a href="#">First link</a></li>
                             <li><a href="#">Second link</a></li>
                             <li><a href="#">Third link</a></li>
@@ -28,7 +31,7 @@
                         <p class="fs-small">
                             This page was made to tell the whole world how awesome foxes are.
                         </p>
-                        <button class="bg-clr-secondary text-clr-light">Sign up</button>
+                        <button class="btn bg-clr-secondary text-clr-light">Sign up</button>
                     </div>
                     <img src="./img/fox.jpg" alt="Close-up of red fox"> 
                 </div>
@@ -79,7 +82,7 @@
                             Signup for fox adoption program right now!
                         </p>
                     </div>
-                    <button class="bg-clr-secondary text-clr-light">Sign up</button>
+                    <button class="btn bg-clr-secondary text-clr-light">Sign up</button>
                 </div>
             </section>
         </main>
