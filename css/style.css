@@ -104,6 +104,7 @@ li > a{
 }
 
 .nav-switch[aria-expanded="true"]{
+    position: fixed;
     background-image: url("../img/close.svg");
 }
 
